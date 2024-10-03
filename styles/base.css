@@ -17,6 +17,7 @@ header h1 {
     padding: 20px;
     background-color: #77B6EA;
     font-weight: 500;
+    font-size: 2rem;
 }
 
 nav{
@@ -39,7 +40,7 @@ main {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-gap: 40px;
-    padding: 20px;
+    padding: 50px;
 }
 
 .card{
@@ -48,16 +49,18 @@ main {
     border: 2px solid #C7D3DD;
     border-radius: 25px;
     align-items: center;
+    width: 100%;
     /* justify-content: center; */
 }
 
-.card h1{
+.card h2{
     background-color: #77B6EA;
     text-align: center;
     width: 100%;
     margin: 0px;
     padding: 20px 0px;
     border-radius: 25px 25px 0px 0px;
+    font-size: 1.7rem;
 }
 
 .about-me-wrapper{
@@ -79,11 +82,12 @@ main {
 
 }
 
-.card h2 {
+.card h3 {
     width: 80%;
     text-align: center;
     padding: 5px;
     border-bottom: 2px solid #C7D3DD;
+    font-size: 1.3rem;
 }
 
 .city-wrapper {
