@@ -1,3 +1,4 @@
+@media screen and (max-width: 2500px) {
 body{
     margin: 0px;
     background-color: #E8EEF2;
@@ -26,7 +27,7 @@ nav{
     justify-content: space-around;
     background-color: #37393A;
     width: 100vw;
-    padding: 0px 25px 0px 25px;
+    padding: 10px 25px 10px 25px;
     color: #E8EEF2;
 }
 
@@ -34,6 +35,10 @@ nav a {
     text-decoration: none;
     color: #E8EEF2;
     font-size: 1.7rem;
+}
+
+nav a:hover{
+    color: #D6C9C9;
 }
 
 main {
