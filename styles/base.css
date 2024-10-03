@@ -9,6 +9,7 @@ body{
 }
 
 header h1 {
+    font-family: "Fredoka", sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,7 +20,7 @@ header h1 {
     background-color: #77B6EA;
     font-weight: 500;
     font-size: 2rem;
-    font-family: "Fredoka", sans-serif;
+
 }
 
 nav{
@@ -135,4 +136,5 @@ p{
 
 .copyright-wrapper{
     font-size: 1.5rem;
+}
 }
