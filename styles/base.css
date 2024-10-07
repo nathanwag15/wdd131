@@ -14,7 +14,7 @@ header h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #E8EEF2;
+    color: white;
     margin: 0px auto;
     padding: 20px;
     background-color: #77B6EA;
@@ -30,17 +30,17 @@ nav{
     background-color: #37393A;
     width: 100vw;
     padding: 10px 25px 10px 25px;
-    color: #E8EEF2;
+    color: white;
 }
 
 nav a {
     text-decoration: none;
-    color: #E8EEF2;
+    color: white;
     font-size: 1.7rem;
 }
 
 nav a:hover{
-    color: #D6C9C9;
+    color: white;
 }
 
 main {

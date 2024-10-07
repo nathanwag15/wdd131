@@ -1,6 +1,6 @@
 body{
     margin: 0px;
-    background-color: #E8EEF2;
+    background-color: white;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -72,7 +72,7 @@ nav {
     transition: .5s;
     font-weight: 700;
     color: #37393a;
-    font-size: clamp(irem, 2vmin, 1,5rem);
+    font-size: 1.5rem;
 }
 
 .show a{
@@ -83,7 +83,7 @@ nav {
 
 a:hover{
     background-color: #37393a;
-    color: #e8eef2;
+    color: white;
     font-weight: 700;
 }
 

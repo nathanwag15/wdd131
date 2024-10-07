@@ -1,7 +1,7 @@
 @media screen and (min-width: 500px) {
     body{
         margin: 0px;
-        background-color: #E8EEF2;
+        background-color: white;
         font-family: "Poppins", sans-serif;
         font-weight: 300;
         font-style: normal;
@@ -26,7 +26,7 @@
 
     .navigation a {
         font-size: 1.3rem;
-        color: #E8EEF2;
+        color: white;
         text-decoration: none;
     }
 
