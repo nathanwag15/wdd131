@@ -247,7 +247,7 @@ img {
     opacity: .9;
     font-size: larger;
     
-    min-height: 200px;
+    height: 200px;
     min-width: 200px;
 }
 
