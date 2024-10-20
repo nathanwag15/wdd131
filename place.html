@@ -7,6 +7,7 @@
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals Nathan Wagstaff This is a places page.">
     <meta name="author" content="Nathan Wagstaff">
     <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
@@ -18,11 +19,64 @@
         <h1>Japan</h1>
     </header>
     <main>
-        <!-- <picture class="hero-image">
-            <source media="(min-width:650px)" srcset="img_pink_flowers.jpg">
-            <source media="(min-width:465px)" srcset="img_white_flower.jpg">
-            <img src="images/31214-1920x1080-desktop-1080p-japan-background-image.webp" alt="Flowers">
-        </picture> -->
+        <section class="hero">
+            
+                <picture>
+                    <source media="(min-width:900px)" srcset="images/Japan-Large.webp">
+                    <source media="(min-width:300px)" srcset="images/Japan-Small.webp">
+                    <img src="images/Japan-Large.png" alt="Flowers">
+                </picture>
+            
+
+                <div class="hero-content">
+                <div class="data-wrapper">
+                    <div class="title">
+                        <h2>Data</h2>
+                    </div>                    
+                    <div class="data-content">
+                            <h3>Area:</h3>
+                            <p>145,936 sq mi</p>
+                            <h3>Population:</h3>
+                            <p>123,562,014</p>
+                            <h3>Capital:</h3>
+                            <p>Tokyo</p>
+                            <h3>Languages:</h3>
+                            <p>Japanese</p>
+                            <h3>Currency:</h3>
+                            <p>Yen</p>
+                            <h3>Time Zone:</h3>
+                            <p>GMT+9</p>
+                            <h3>Calling Code:</h3>
+                            <p>+81</p>
+                            <h3>Internet TLD:</h3>
+                            <p>.jp</p>
+                    </div>
+                </div>
+                <div class="weather-wrapper">
+                    <div class="title">
+                        <h2>Weather</h2>
+                        <img src="images/1530369_weather_cloud_clouds_cloudy_icon.svg">
+                    </div> 
+                    <div class="data-content">
+                        <h3>Temperature:</h3>
+                        <p id="temperature"></p>
+                        <h3>Conditions</h3>
+                        <p id="conditions"></p>
+                        <h3>Wind:</h3>
+                        <p id="wind">Tokyo</p>
+                        <h3>Wind Chill:</h3>
+                        <p id="windChill">Japanese</p>
+                    </div>
+                </div>
+        </section>
     </main>
+    <footer>
+        <p class="copyright-wrapper">
+            Copyright &#169;<span id="currentyear"></span> Nathan Wagstaff Utah USA
+        </p>
+        <p>
+            <span id="lastmodified"></span>
+        </p>
+    </footer>
 </body>
 </html>
