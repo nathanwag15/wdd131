@@ -1,0 +1,122 @@
+@media screen and (min-width: 500px) {
+    body{
+        margin: 0px;
+        background-color: white;
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+    header {
+        background-color: #37393A;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 15px 30px 15px 30px;
+        color: #E8EEF2;
+        margin: 0px;
+        max-width: 100%;
+    }
+    
+    .navigation {
+        display: flex;
+        justify-content: space-around;
+        
+    }
+
+    .navigation a {
+        font-size: 1.3rem;
+        color: white;
+        text-decoration: none;
+    }
+
+    nav{
+        background-color: #37393A;
+        list-style: none;
+        background-color: #37393A;
+        
+        width: 40%;
+    }
+
+    .navigation li {
+        display: block;
+    }
+
+    #menu {
+        display: none;
+    }
+    a:hover{
+        color: #FFB8B8;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    main > .album-wrapper
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 15px;
+        padding: 0px 50px 0px 50px;
+    }
+
+    .album-wrapper > figure
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 4px;
+        padding-bottom: 20px;
+    }
+
+    .album-wrapper > figure > figcaption
+    {
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+
+    figure img{
+        width: 700px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #menu {
+        display: none; /* hide hamburger button */
+    }
+
+    .navigation {
+        flex-direction: row;
+    }
+
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    .stuff {
+        margin: 1rem auto;
+    }
+
+    .copyright-wrapper{
+        font-size: 1.5rem;
+    }
+    
+    
+
+}
