@@ -1,4 +1,4 @@
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 1000px) {
     body{
         margin: 0px;
         background-color: white;
@@ -64,25 +64,37 @@
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 15px;
         padding: 0px 50px 0px 50px;
+        width: 80%
     }
 
-    .album-wrapper > figure
+    figure
     {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-around;
         margin: 4px;
-        padding-bottom: 20px;
+        padding: 20px;
+        box-shadow: 0px 0px 26px 0px rgba(0,0,0,0.75);
+        max-width: 500px;
+        max-height: 500px;
     }
 
-    .album-wrapper > figure > figcaption
+    figure h2 {
+        font-size: 1.3em;
+        margin: 2px;
+    }
+
+    figure > figcaption
     {
-        font-size: 1.2rem;
+        font-size: 1em;
         font-weight: 400;
     }
 
     figure img{
-        width: 700px;
+        max-width: 450px;
+        max-height: 350px;
+        padding: 30px 0px;
     }
 
     h1 {

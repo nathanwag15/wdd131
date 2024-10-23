@@ -122,6 +122,12 @@ main > .album-wrapper
     font-size: 1.2rem;
     font-weight: 400;
 }
+img
+{
+    max-width: 370px;
+    max-height: 350px;
+    padding: 30px 0px;
+}
 
 footer{
     display: flex;

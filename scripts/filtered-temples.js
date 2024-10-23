@@ -2,7 +2,8 @@ const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
 const copyrightdate = document.querySelector('#currentyear');
 const lastmodified = document.querySelector('#lastmodified');
-const albumWrapper = document .querySelector('#album-wrapper');
+const albumWrapper = document.querySelector('#album-wrapper');
+const heading = document.getElementById('dynamicHeading');
 
 hamButton.addEventListener('click', () => {
 	navigation.classList.toggle('show');
@@ -84,6 +85,13 @@ const temples = [
 		area: 116642,
 		imageUrl:
 		"https://churchofjesuschristtemples.org/assets/img/temples/brigham-city-utah-temple/brigham-city-utah-temple-39612-main.jpg"
+	  },{
+		templeName: "Okinawa Japan",
+		location: "Okinawa, Japan",
+		dedicated: "2023, November, 12",
+		area: 12437,
+		imageUrl:
+		"https://churchofjesuschristtemples.org/assets/img/temples/okinawa-japan-temple/okinawa-japan-temple-40844.jpg"
 	  },
 	  {
 		templeName: "Sapporo Japan",
@@ -93,30 +101,152 @@ const temples = [
 		imageUrl:
 		"https://churchofjesuschristtemples.org/assets/img/temples/sapporo-japan-temple/sapporo-japan-temple-11067.jpg"
 	  },
-	  {
-		templeName: "Okinawa Japan",
-		location: "Okinawa, Japan",
-		dedicated: "2023, November, 12",
-		area: 12437,
-		imageUrl:
-		"https://churchofjesuschristtemples.org/assets/img/temples/okinawa-japan-temple/okinawa-japan-temple-40844.jpg"
-	  }
+	  
   ];
+
+ 
 
   const templeListDisplay = temples.map(temple => {
 		return `
 			<figure>
 				<h2>${temple.templeName}</h2>
-				<figcaption>Location: ${temple.location}</figcaption>
-				<figcaption>Dedicated: ${temple.dedicated}</figcaption>
-				<figcaption>Size: ${temple.area} sq ft</figcaption>
-                <img src=${temple.imageUrl} >		
+				<p>Location: ${temple.location}</p>
+				<p>Dedicated: ${temple.dedicated}</p>
+				<p>Size: ${temple.area} sq ft</p>
+                <img src=${temple.imageUrl} loading="lazy">		
                 
             </figure> `;
   }).join("");
 
 
-  albumWrapper.innerHTML = templeListDisplay
+  document.getElementById('old').addEventListener('click', () =>{
+	const templeListDisplay = temples.map(temple => {
 
-  
+		const dateParts = temple.dedicated.split(',');
+
+		const year = dateParts[0].trim();
+		if (year < 1900) {
+			return `
+			<figure>
+				<h2>${temple.templeName}</h2>
+				<p>Location: ${temple.location}</p>
+				<p>Dedicated: ${temple.dedicated}</p>
+				<p>Size: ${temple.area} sq ft</p>
+                <img src=${temple.imageUrl} loading="lazy">		
+                
+            </figure> `;
+		}
+  }).join("");
+
+  	title = "Old";
+	
+  	albumWrapper.innerHTML = templeListDisplay
+	pageTitle.innerText= title
+  });
+
+  document.getElementById('old').addEventListener('click', () =>{
+	const templeListDisplay = temples.map(temple => {
+
+		const dateParts = temple.dedicated.split(',');
+
+		const year = dateParts[0].trim();
+		if (year < 1900) {
+			return `
+			<figure>
+				<h2>${temple.templeName}</h2>
+				<p>Location: ${temple.location}</p>
+				<p>Dedicated: ${temple.dedicated}</p>
+				<p>Size: ${temple.area} sq ft</p>
+                <img src=${temple.imageUrl} loading="lazy">		
+                
+            </figure> `;
+		}
+		
+  }).join("");
+  	heading.textContent = "Old"
+  	albumWrapper.innerHTML = templeListDisplay
+  });  
+
+  document.getElementById('new').addEventListener('click', () =>{
+	const templeListDisplay = temples.map(temple => {
+
+		const dateParts = temple.dedicated.split(',');
+
+		const year = dateParts[0].trim();
+		if (year > 2000) {
+			return `
+			<figure>
+				<h2>${temple.templeName}</h2>
+				<p>Location: ${temple.location}</p>
+				<p>Dedicated: ${temple.dedicated}</p>
+				<p>Size: ${temple.area} sq ft</p>
+                <img src=${temple.imageUrl} loading="lazy">		
+                
+            </figure> `;
+		}
+		
+  }).join("");
+  	heading.textContent = "New"
+  	albumWrapper.innerHTML = templeListDisplay
+  });  
+
+  document.getElementById('home').addEventListener('click', () =>{
+	const templeListDisplay = temples.map(temple => {
+		return `
+		<figure>
+			<h2>${temple.templeName}</h2>
+			<p>Location: ${temple.location}</p>
+			<p>Dedicated: ${temple.dedicated}</p>
+			<p>Size: ${temple.area} sq ft</p>
+			<img src=${temple.imageUrl} loading="lazy">		
+			
+		</figure> `;
+		
+  }).join("");
+  	heading.textContent = "Home"
+  	albumWrapper.innerHTML = templeListDisplay
+  });
+
+  document.getElementById('large').addEventListener('click', () =>{
+	const templeListDisplay = temples.map(temple => {
+
+		if (temple.area > 90000) {
+			return `
+			<figure>
+				<h2>${temple.templeName}</h2>
+				<p>Location: ${temple.location}</p>
+				<p>Dedicated: ${temple.dedicated}</p>
+				<p>Size: ${temple.area} sq ft</p>
+                <img src=${temple.imageUrl} loading="lazy">		
+                
+            </figure> `;
+		}
+		
+  }).join("");
+  	heading.textContent = "Large"
+  	albumWrapper.innerHTML = templeListDisplay
+  });  
+
+  document.getElementById('small').addEventListener('click', () =>{
+	const templeListDisplay = temples.map(temple => {
+
+		if (temple.area < 10000) {
+			return `
+			<figure>
+				<h2>${temple.templeName}</h2>
+				<p>Location: ${temple.location}</p>
+				<p>Dedicated: ${temple.dedicated}</p>
+				<p>Size: ${temple.area} sq ft</p>
+                <img src=${temple.imageUrl} loading="lazy">		
+                
+            </figure> `;
+		}
+		
+  }).join("");
+  	heading.textContent = "Small"
+  	albumWrapper.innerHTML = templeListDisplay
+  });  
+
+  heading.textContent = "Home"
+  albumWrapper.innerHTML = templeListDisplay
   
