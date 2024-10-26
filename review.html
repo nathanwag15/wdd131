@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review Submission</title>
+</head>
+<body>
+  <h1>Thank you for your review!</h1>
+  <p>You have submitted <span id="reviewCount">0</span> reviews.</p>
+
+  <script>
+    // Function to increment the review counter
+    function incrementReviewCounter() {
+      // Check if "reviewCount" exists in localStorage
+      let reviewCount = localStorage.getItem('reviewCount');
+      
+      // Initialize the counter if it doesn't exist
+      if (!reviewCount) {
+        reviewCount = 0;
+      } else {
+        // Convert the stored value to a number
+        reviewCount = parseInt(reviewCount, 10);
+      }
+
+      // Increment the counter
+      reviewCount++;
+
+      // Update localStorage with the new counter value
+      localStorage.setItem('reviewCount', reviewCount);
+
+      // Display the counter in the HTML
+      document.getElementById('reviewCount').textContent = reviewCount;
+    }
+
+    // Call the function when the page loads
+    incrementReviewCounter();
+  </script>
+</body>
+</html>
