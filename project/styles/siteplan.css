@@ -1,0 +1,56 @@
+:root {
+    --primary-color: #062323;
+    --secondary-color: #73C5C7;
+    --accent-color: #D99381;
+}
+
+body {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+h1 {
+    color: var(--primary-color)
+}
+
+h2 {
+    color: var(--accent-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 20px;
+    width: 100%;
+}
+
+header h1{
+    margin: 0px;
+    color: white;
+}
+
+main {
+    width: 70%;
+}
+
+.primary-color{
+    background-color: var(--primary-color);
+    padding: 10px;
+    color: white;
+}
+
+.secondary-color{
+    background-color: var(--secondary-color);
+    padding: 10px;
+    color: white;
+}
+
+.accent-color{
+    background-color: #D99381;
+    padding: 10px;
+    color: white;
+}

@@ -7,8 +7,8 @@ const numTemp = 72;
 const temperature = `${numTemp}°F`;
 temperatureContent.textContent = temperature;
 
-const conditions = "Cloudy";
-conditionsContent.textContent = conditions;
+// const conditions = "Cloudy";
+// conditionsContent.textContent = conditions;
 
 const windSpeed = 3
 const wind = `${windSpeed} mph` 
