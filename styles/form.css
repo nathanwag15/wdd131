@@ -17,7 +17,7 @@ body {
 }
 
 form {
-    width: calc(400px - 39px);
+    width: calc(400px - 40px);
     display: flex;
     flex-direction: column;
     padding: 20px;
