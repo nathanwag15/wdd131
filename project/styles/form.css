@@ -1,0 +1,139 @@
+form > .form-group {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+form input {
+    font-size: 1.5rem;
+    font-family: inherit;
+    color: inherit;
+    padding: 1.5rem 2rem;
+    border-radius: 2px;
+    border: none;
+    border-bottom: 3px solid #11122b;
+    display: block;
+    transition: all 0.3s;
+    width: 100% ;
+}
+
+form input:focus{
+    outline:none;
+    box-shadow: 0 2rem 2rem  rgba(0,0,0,0.1);
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+
+form textarea {
+    margin-top: 20px;
+    width: 100%;
+    height: 250px;
+    border-radius: 3px;
+    border: 3px solid #11122b;
+    font-size: 1.5rem;
+    color: black;
+    padding: 1.5rem 2rem;
+    transition: all 0.3s;
+}
+
+form input::-webkit-input-placeholder, .form textarea::-webkit-input-placeholder{
+    color: #11122b;
+}
+
+form label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 2rem;
+    margin-top: 0.7rem;
+    display: block;
+    transition: all 0.3s;
+    color: var(--secondary-color);
+    visibility: hidden;
+    opacity:0;  
+}
+
+form textarea:focus{
+    outline:none;
+    box-shadow: 0 2em 2rem  rgba(0,0,0,0.1);
+    border: 3px solid var(--secondary-color);
+}
+
+form input:focus + label, textarea:focus + label {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(1rem);
+}
+
+form input:focus::-webkit-input-placeholder, .form textarea:focus::-webkit-input-placeholder{
+    color:transparent;
+}
+
+.btn{
+    width: 70%;
+    border: none;
+    background-color:var(--accent-color);
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    transition: .3s;
+    box-shadow: 10px 10px 30px -11px rgba(0,0,0,0.75);
+    text-align: center;
+}
+
+.btn:hover{
+    background-color: var(--primary-color);
+    color: white;
+    
+}
+
+.btn:active{
+    box-shadow: none;
+    transition: .1s;
+}
+
+.contact-grid-wrapper {
+    width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 100px;
+}
+
+.company-metadata-sidebar-wrapper > .logo img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.company-metadata-sidebar-wrapper > .company-details-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 23px;
+    align-items: center;
+    text-align: right;
+    font-size: 1.25em;
+}
+.company-metadata-sidebar-wrapper > .company-details-wrapper i{
+    color:var(--secondary-color);
+}
+
+@media screen and (max-width: 1200px) {
+    .contact-grid-wrapper {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    form textarea{
+        height: 100px;
+        width: 200px;
+    }
+
+    form input {
+        width: 200px;
+    }
+}
+
+

@@ -1,0 +1,129 @@
+.title{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title h1{
+    color: white;
+    font-size: 5rem;
+}
+
+.main-overview-wrapper {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-overview-wrapper h2 {
+    font-size: 3rem;
+}
+
+.main-overview-wrapper p{
+    font-size: 2rem;
+}
+
+.squares-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.squares-wrapper > .squares{
+   width: 1000px;
+}
+
+.squares-wrapper > .squares > .square{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: -4px;
+}
+
+.square > .image-wrapper img {
+   width: 100%;
+   height: 500px;
+   object-fit: cover;
+}
+
+.square > .square-text-wrapper {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   padding: 42px
+}
+
+.square > .square-text-wrapper h1{
+   color: var(--secondary-color);
+}
+
+@media screen and (max-width: 1500px) {
+    .main-overview-wrapper{
+        width: 80%;
+    }
+
+    .square-text-wrapper{
+        width: 100%;
+    }
+
+    .square-text-wrapper h1 {
+        font-size: 2rem;
+    }
+
+    .square-text-wrapper P {
+        max-width: 500px;
+    }
+
+    .squares-wrapper > .squares > .square {
+        grid-template-columns: 1fr;
+    }
+
+    .image-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .square .image-wrapper img{
+        width: 500px;
+        max-height: 400px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .square-text-wrapper P {
+        max-width: 250px;
+    }
+
+    .squares-wrapper .squares {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+    }
+
+    .square {
+        width: 70%;
+    }
+
+    .square-text-wrapper h1 {
+        font-size: 1.5rem;
+    }
+
+    .square .square-text-wrapper {
+        padding: 0px;
+    }
+
+    .square .image-wrapper {
+        width: 100%;
+    }
+
+    .square .image-wrapper img {
+        width: 200px
+    }
+
+}

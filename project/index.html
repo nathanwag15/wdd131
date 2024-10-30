@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience Nihon</title>
+    <meta name="description" content="This is a home page.">
+    <meta name="author" content="Nathan Wagstaff">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/hamburger.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css"> 
+    <link rel="stylesheet" href="styles/homepage.css">
+
+</head>
+<body>
+    <header>
+        <div class="navigation">
+            <div class="navigation-wrapper">            
+                <h3> <a href="index.html">Experience Nihon</a></h3>
+                <a id="menu"></a>
+            </div>
+            <nav>
+                <div class="navigation-links-wrapper">
+                    <a href="Osaka.html">Osaka</a>
+                    <a href="Tokyo.html">Tokyo</a>
+                    <a href="Sapporo.html">Sapporo</a>
+                    <a href="Contact-Us.html">Contact Us</a>
+                </div>
+            </nav>            
+        </div>        
+    </header>
+    <main>
+        <div class="hero-wrapper">
+            <div class="hero-content">
+                <h1>Welcome to Japan</h1>
+                <p>Explore Japan’s top destinations! From vibrant cities to serene temples uncover must-visit spots and hidden gems. This is your definitive resource for the best places to add to your next trip.</p>
+            </div>            
+        </div>
+        <div class="spacer40"></div>
+        <div class="location-wrapper">
+            <div class="location-wrapper-text">
+                <h2>Dynamic Tokyo!</h2>                
+                <p>Tokyo is a thrilling blend of tradition and tech, with historic temples, vibrant shopping districts, and world-famous cuisine.</p>
+                <a href="Sapporo.html">Learn More</a>
+            </div>
+            <picture>
+                <source srcset="images/homepage/Tokyo.webp">
+                <img src="images/homepage/Tokyo.jpg" alt="Osaka" loading="lazy">
+            </picture>
+        </div>
+        <div class="location-wrapper mirror">
+            <picture>
+                <source srcset="images/homepage/delicious-osaka.webp">
+                <img src="images/homepage/delicious-osaka.jpg" alt="Osaka" loading="lazy">
+            </picture>
+            <div class="location-wrapper-text">
+                <h2>Delicious Osaka!</h2>                
+                <p>Osaka is Japan’s lively hub for food, entertainment, and culture. Visit for amazing street food, historic sites, and the vibrant Dotonbori district!</p>
+                <a href="Osaka.html">Learn More</a>
+            </div>
+            
+        </div>
+        <div class="location-wrapper">
+            <div class="location-wrapper-text">
+                <h2>Scenic Sapporo!</h2>
+                <p>
+                    Sapporo offers a unique mix of natural beauty and city life, famous for its winter festivals, fresh seafood, and scenic landscapes.
+                </p>
+                <a href="Sapporo.html">Learn More</a>
+            </div>
+            <picture>
+                <source srcset="images/homepage/sapporo_winter.webp">
+                <img src="images/homepage/sapporo_winter.jpg" alt="Osaka" loading="lazy">
+            </picture>
+        </div>
+        
+    </main>
+    <footer>
+        <p class="copyright-wrapper">
+            Copyright &#169;<span id="currentyear"></span> Nathan Wagstaff Utah USA
+        </p>
+        <p>
+            <span id="lastmodified"></span>
+        </p>
+    </footer>
+</body>
